@@ -24,5 +24,7 @@
     - [ ] Contratada(terceira)
     - [ ] Categoria documento
 
-
+### Melhorias/Segurança
 - [ ] Validação de CNPJ/CPF da empresa contratante e terceirizada para verificar se já existe no BD.
+- [ ] Quando o documento expirar a validade, o mesmo poderá ser excluido e ficará somente os dados de cadastro.
+- [ ] Envio de E-mails automaticos ao validar documentos, marcar/remarcar integrações.

@@ -22,7 +22,7 @@
                 <div class="col-md-12">
                     <div class="form-floating">
                         <input class="form-control" type="text" name="user" id="user">
-                        <label for="user">Usuario</label>
+                        <label for="user">Usuário</label>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -39,7 +39,7 @@
                             <option value="2">Empresa</option>
                             <option value="3">Prestador</option>
                         </select>
-                        <label for="tipo">Selecione o tipo do usuario</label>
+                        <label for="tipo">Selecione o tipo do usuário</label>
                     </div>
                 </div>
                 <p class="text-center"> <a href="">Esqueci minha senha</a> </p>

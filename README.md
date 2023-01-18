@@ -1,6 +1,8 @@
 # Docs
 
 ### Requisitos a cumprir
+- [ ] Tela de Login
+
 - [ ] Adicionar 3 tipos de usuario (Administrador, Empresa Contratante, Contratada(terceiro).
 
 - [ ] Telas Home Separadas por tipo de usuario:

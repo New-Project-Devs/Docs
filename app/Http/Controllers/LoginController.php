@@ -19,7 +19,7 @@ class LoginController extends Controller
                 $request->session()->regenerate();
                 return redirect()->route('home.administrador');
             }
-            return redirect()->back()->with('erro','Usuario ou Senha Incorretos');
+            return redirect()->back()->with('erro','Usuário ou Senha Incorretos');
             
         }
         

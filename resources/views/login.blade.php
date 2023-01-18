@@ -17,17 +17,25 @@
 <body>
     <div class="container">
         <div class="form-signin border rounded shadow">
-            <form class="row g-3" action="">
-                <h2 class="text-center fw-bold text-decoration-underline">DOCs</h2>
+            <h2 class="text-center fw-bold text-decoration-underline">DOCs</h2>
+            @if ($mensagem = Session::get('erro'))
+                <div class="text-center">
+                    <div class="alert alert-danger" role="alert">
+                        {{$mensagem}}
+                      </div>
+                </div>
+                @endif
+            <form class="row g-3" action="{{route('login')}}" method="POST">
+                @csrf
                 <div class="col-md-12">
                     <div class="form-floating">
-                        <input class="form-control" type="text" name="user" id="user">
-                        <label for="user">Usuário</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                        <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="form-floating">
-                        <input class="form-control" type="password" name="pass" id="pass">
+                        <input class="form-control" type="password" name="password" id="password">
                         <label for="pass">Senha</label>
                     </div>
                 </div>

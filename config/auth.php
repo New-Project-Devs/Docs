@@ -1,5 +1,7 @@
 <?php
 
+//use Illuminate\Support\Facades\App;
+
 return [
 
     /*
@@ -40,6 +42,11 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'administrador'=>[
+            'driver'=>'session',
+            'provider'=>'administrador',
+        ],
     ],
 
     /*
@@ -60,10 +67,12 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'administrador' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Administrador::class,
         ],
+        
+        
 
         // 'users' => [
         //     'driver' => 'database',

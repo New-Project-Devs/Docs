@@ -1,7 +1,7 @@
 # Docs
 
 ### Requisitos a cumprir
-- [ ] Tela de Login
+- [X] Tela de Login
 
 - [ ] Adicionar 3 tipos de usuario (Administrador, Empresa Contratante, Contratada(terceiro).
 

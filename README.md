@@ -56,3 +56,4 @@
 - [ ] Envio de E-mails automaticos ao validar documentos, marcar/remarcar integrações.
 - [ ] Gerar "Cracha" para a integração (Nome completo do funcionario, CPF/RG do funcionario, Data Nascimento/Idade, Empresa(CNPJ/CPF), Empresa contratante(CNPJ)).
 - [ ] Validar se usuario digitou CNPJ ou CPF no cadastro de terceiro.
+- [ ] Tabela de serviços oferecidos pelo prestador.

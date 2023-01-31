@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Administrador;
+use App\Models\Prestador;
 use Illuminate\Http\Request;
 
-class AdministradorController extends Controller
+class PrestadorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class AdministradorController extends Controller
      */
     public function index()
     {
-        return view('/administrador/home');
+        //
     }
 
     /**
@@ -41,10 +41,10 @@ class AdministradorController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Administrador  $administrador
+     * @param  \App\Models\Prestador  $prestador
      * @return \Illuminate\Http\Response
      */
-    public function show(Administrador $administrador)
+    public function show(Prestador $prestador)
     {
         //
     }
@@ -52,10 +52,10 @@ class AdministradorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Administrador  $administrador
+     * @param  \App\Models\Prestador  $prestador
      * @return \Illuminate\Http\Response
      */
-    public function edit(Administrador $administrador)
+    public function edit(Prestador $prestador)
     {
         //
     }
@@ -64,10 +64,10 @@ class AdministradorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Administrador  $administrador
+     * @param  \App\Models\Prestador  $prestador
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Administrador $administrador)
+    public function update(Request $request, Prestador $prestador)
     {
         //
     }
@@ -75,10 +75,10 @@ class AdministradorController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Administrador  $administrador
+     * @param  \App\Models\Prestador  $prestador
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Administrador $administrador)
+    public function destroy(Prestador $prestador)
     {
         //
     }

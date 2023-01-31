@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdministradorController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,8 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::post('/auth',[LoginController::class,'auth'])->name('login');
+Route::post('/auth', [LoginController::class,'auth'])->name('login');
+
+Route::middleware('auth')->group(function(){
+    Route::get('/administrador',[AdministradorController::class,'index'])->name('home.administrador');
+});

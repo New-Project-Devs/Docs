@@ -38,14 +38,20 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
-
+        
         'administrador'=>[
             'driver'=>'session',
             'provider'=>'administrador',
+        ],
+
+        'empresa'=>[
+            'driver'=>'session',
+            'provider'=>'empresa',
+        ],
+
+        'prestador'=>[
+            'driver'=>'session',
+            'provider'=>'prestador',
         ],
     ],
 
@@ -70,6 +76,14 @@ return [
         'administrador' => [
             'driver' => 'eloquent',
             'model' => App\Models\Administrador::class,
+        ],
+        'empresa' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Empresa::class,
+        ],
+        'prestador' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Prestador::class,
         ],
         
         

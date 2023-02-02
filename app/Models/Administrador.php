@@ -4,10 +4,10 @@ namespace App\Models;
 
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User;
 
 
-class Administrador extends Model 
+class Administrador extends User
 {
     protected $fillable =[
         'nome',
@@ -15,6 +15,10 @@ class Administrador extends Model
         'username',
         'password',
         'foto_perfil'
+    ];
+
+    protected $hidden = [
+        'password',
     ];
 
     use HasFactory;

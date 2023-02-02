@@ -3,9 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User;
 
-class Empresa extends Model
+class Empresa extends User
 {
     protected $fillable =[
         'razao_social',
@@ -26,6 +26,10 @@ class Empresa extends Model
         'emails',
         'obs',
         'logo_empresa',
+    ];
+
+    protected $hidden = [
+        'password',
     ];
     use HasFactory;
 }
